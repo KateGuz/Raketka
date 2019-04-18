@@ -1,0 +1,66 @@
+@import "../../bin/variables";
+
+.main-banner {
+  background: url("/img/main/banner/back.png") no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+  padding: 30px 150px 45px;
+  max-height: 320px;
+  position: relative;
+}
+
+.main-banner__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-banner .main-banner__item-wrapper .main-banner__item-img {
+  width: auto;
+}
+
+.main-banner__item-body {
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.main-banner__item-title {
+  font-weight: 600;
+  font-size: $font-size-large;
+  margin-bottom: 20px;
+}
+
+.main-banner__item-text {
+  line-height: 1.5;
+}
+
+.main-banner__carousel-prev,
+.main-banner__carousel-next {
+  cursor: pointer;
+  color: $color-white;
+  font-size: 26px;
+  text-align: center;
+  position: absolute;
+  top: calc(50% - 20px);
+  z-index: 1;
+}
+
+.main-banner__carousel-next {
+  right: 70px;
+}
+
+.main-banner__carousel-prev {
+  left: 70px;
+}
+
+.owl-theme .owl-dots {
+  margin-top: 20px !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 8px !important;
+  height: 8px !important;
+  margin: 5px 12px !important;
+}

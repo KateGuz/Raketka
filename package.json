@@ -1,0 +1,67 @@
+{
+  "name": "promtex",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "config": {
+    "src": {
+      "sass": "src/sass/main.scss",
+      "html": "src/**/*.html",
+      "js": "src/js/*.js",
+      "fonts": "src/fonts/**/*.*",
+      "doc": "src/doc/**/*.*",
+      "img": {
+        "compress": [
+          "src/img/**/*.*",
+          "!src/img/nocompress/**/*.*"
+        ],
+        "noCompress": "src/img/nocompress/**/*.*"
+      }
+    },
+    "dist": {
+      "css": "dist/css",
+      "html": "dist",
+      "js": "dist/js/",
+      "fonts": "dist/fonts",
+      "img": "dist/img",
+      "doc": "dist/doc"
+    },
+    "libs": {
+      "js": "src/js/libs",
+      "css": "src/lib/*.css"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.7",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-file-include": "^2.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-import-css": "^0.1.3",
+    "gulp-include": "^2.3.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "require-dir": "^1.0.0",
+    "rfs": "^7.1.1",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "natives": "^1.1.6"
+  }
+}

@@ -1,0 +1,74 @@
+@import "../bin/variables";
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.nav__search {
+  width: 30%;
+  border-bottom: 1px solid $light-green-grey;
+}
+
+.nav__search input {
+  width: 80%;
+  border: none;
+  margin-bottom: 3px;
+}
+
+.nav__search button {
+  border: none;
+  background: none;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  font-weight: 600;
+}
+
+.nav__item a {
+  color: $dark-grey;
+
+  &:hover, :active {
+    color: $main-green;
+  }
+}
+
+.nav__categories-items {
+  display: flex;
+
+  &:last-child {
+    .nav__categories-item {
+      border-top: none;
+    }
+  }
+}
+
+.nav__categories-item {
+  display: block;
+  border: 1px solid $yellow-green;
+  border-right: none;
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+
+  &:last-child {
+    border-right: 1px solid $yellow-green;
+  }
+}
+
+.nav__categories-item a {
+  display: block;
+  color: $main-green;
+
+  &:hover, :active {
+    color: $color-white;
+    background-color: #4f7d1a;
+  }
+}

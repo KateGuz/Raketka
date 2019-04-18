@@ -1,0 +1,52 @@
+@import "../../bin/variables";
+
+.main-news {
+  margin-top: 50px;
+}
+
+.main-news__items {
+  margin-top: 40px;
+}
+
+.main-news__item {
+  display: flex;
+}
+
+.main-news__item-img {
+  padding: 0 50px;
+}
+
+.main-news__item-body {
+  padding: 30px 100px 30px 40px;
+}
+
+.main-news__item-title {
+  font-size: $font-size-medium-large;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main-news__item-text {
+  line-height: 1.5;
+}
+
+.main-news__item-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.main-news__item-more {
+  color: $main-green;
+  font-weight: 500;
+}
+
+.main-news__item-date {
+  color: $light-green-grey;
+  font-weight: 500;
+}
+
+.main-news__button-wrapper {
+  margin: 40px 0;
+  text-align: center;
+}

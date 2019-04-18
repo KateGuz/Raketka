@@ -1,0 +1,17 @@
+@import "../bin/variables";
+
+.footer {
+  margin: 80px 0 20px;
+}
+
+hr.footer__line {
+  height: 1px;
+  border: none;
+  background-color: $light-green-grey;
+}
+
+.footer__content-text {
+  text-align: center;
+  margin-top: 25px;
+  font-size: $font-size-small;
+}
