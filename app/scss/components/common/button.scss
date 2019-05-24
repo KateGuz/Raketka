@@ -1,0 +1,38 @@
+@import "../../bin/variables";
+
+.button {
+  display: block;
+  width: 180px;
+  height: 40px;
+  color: $main-green;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #dde392;
+
+  &:hover, :active {
+    background-color: $color-white;
+    color: $main-green;
+  }
+}
+
+.button--big {
+  width: 277px;
+}
+
+.button--orange {
+  border-color: $color-orange;
+  color: $color-orange;
+
+  &:hover, :active {
+    border-color: $color-orange;
+    background-color: $color-orange;
+    color: $color-white;
+  }
+}
+
+.button--green-on-hover:hover {
+  background-color: $main-green;
+  color: #fff;
+}

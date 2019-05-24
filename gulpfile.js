@@ -13,7 +13,8 @@ const gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     notify = require('gulp-notify'),
     rsync = require('gulp-rsync'),
-    fileinclude = require('gulp-file-include');
+    fileinclude = require('gulp-file-include'),
+    imageminMozjpeg = require('imagemin-mozjpeg');
 
 const imagemin = require('gulp-imagemin');
 
@@ -62,16 +63,12 @@ gulp.task('fonts', function () {
 gulp.task('img', function () {
     return gulp.src('app/img/**/*.*')
         .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.jpegtran({progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: false},
-                    {cleanupIDs: false}
-                ]
+            imagemin.jpegtran({
+                plugins: [imageminMozjpeg({quality: 25})]
             })
-        ]))
+        ], {
+            verbose: true
+        }))
         .pipe(gulp.dest(dest + '/img'));
 });
 

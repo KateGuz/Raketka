@@ -1,9 +1,5 @@
 @import "../../bin/variables";
 
-.main-news {
-  margin-top: 50px;
-}
-
 .main-news__items {
   margin-top: 40px;
 }
@@ -46,7 +42,10 @@
   font-weight: 500;
 }
 
-.main-news__button-wrapper {
+.main-news__all-button-wrapper {
   margin: 40px 0;
-  text-align: center;
+}
+
+.main-news__all-button {
+  margin: 0 auto;
 }
