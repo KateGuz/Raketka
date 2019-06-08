@@ -1,7 +1,12 @@
 @import "../../bin/variables";
 
+.main-news__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .main-news__items {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .main-news__item {
@@ -43,7 +48,7 @@
 }
 
 .main-news__all-button-wrapper {
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .main-news__all-button {
